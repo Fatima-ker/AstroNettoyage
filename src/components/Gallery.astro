@@ -1,0 +1,83 @@
+<section id="gallery" class="section reveal">
+  <div class="container">
+
+    <h2 class="title">Nos Réalisations</h2>
+    <p class="subtitle">Découvrez quelques-unes de nos interventions récentes : bureaux, résidences et chantiers professionnels traités avec soin.</p>
+
+    <div class="gallery">
+      <figure class="gallery-card">
+        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=900&q=80" alt="Bureau professionnel nettoyé" />
+        <figcaption>Nettoyage bureau premium</figcaption>
+      </figure>
+
+      <figure class="gallery-card">
+        <img src="https://images.unsplash.com/photo-1603712725038-e9334ae8f39f?auto=format&fit=crop&w=900&q=80" alt="Intérieur d'appartement propre" />
+        <figcaption>Entretien d'intérieur résidentiel</figcaption>
+      </figure>
+
+      <figure class="gallery-card">
+        <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=900&q=80" alt="Espace commercial propre avec équipe de nettoyage" />
+        <figcaption>Nettoyage commerce et locaux</figcaption>
+      </figure>
+
+      <figure class="gallery-card">
+        <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=900&q=80" alt="Équipe de nettoyage professionnel" />
+        <figcaption>Intervention rapide et soignée</figcaption>
+      </figure>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 26px;
+  }
+
+  .gallery-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 28px;
+    box-shadow: 0 22px 50px rgba(15, 23, 42, 0.08);
+    background: #ffffff;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+  }
+
+  .gallery-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 26px 60px rgba(15, 23, 42, 0.14);
+  }
+
+  .gallery-card img {
+    width: 100%;
+    min-height: 300px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.35s ease;
+  }
+
+  .gallery-card:hover img {
+    transform: scale(1.03);
+  }
+
+  .gallery-card figcaption {
+    padding: 1.25rem 1.25rem 1.35rem;
+    color: #1f2d4a;
+    font-weight: 700;
+    background: #fff;
+  }
+
+  .gallery-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.16) 100%);
+    pointer-events: none;
+  }
+
+  .gallery-card:hover::after {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.24) 100%);
+  }
+</style>

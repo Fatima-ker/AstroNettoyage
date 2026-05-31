@@ -1,0 +1,101 @@
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="brand-name">CleanPro</span>
+      <p>Nettoyage professionnel et services premium pour vos espaces.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Liens utiles</h3>
+      <nav aria-label="Liens de pied de page">
+        <a href="#home">Accueil</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Galerie</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact</h3>
+      <p>Alger, Algérie</p>
+      <p>Téléphone : +213 555 00 00</p>
+      <p>Email : contact@cleanpro.dz</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 CleanPro Services — Tous droits réservés.</p>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background: #0c1d3a;
+    color: #cfd8ef;
+    padding: 3rem 0 1.5rem;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(220px, 1fr));
+    gap: 2rem;
+    align-items: start;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .brand-name {
+    display: inline-block;
+    font-size: 1.25rem;
+    color: #fff;
+    font-weight: 800;
+    margin-bottom: 0.75rem;
+  }
+
+  .footer-brand p,
+  .footer-contact p {
+    color: #c8d2ea;
+    line-height: 1.8;
+    max-width: 330px;
+  }
+
+  .footer-links h3,
+  .footer-contact h3 {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+
+  .footer-links nav {
+    display: grid;
+    gap: 0.75rem;
+  }
+
+  .footer-links a,
+  .footer-contact p {
+    color: #c8d2ea;
+    text-decoration: none;
+    transition: color 0.25s ease;
+  }
+
+  .footer-links a:hover {
+    color: #ffffff;
+  }
+
+  .footer-bottom {
+    margin-top: 1.5rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.95rem;
+  }
+
+  @media (max-width: 900px) {
+    .footer-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .footer {
+      padding-top: 2.5rem;
+    }
+  }
+</style>

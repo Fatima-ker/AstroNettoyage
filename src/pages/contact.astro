@@ -1,0 +1,221 @@
+---
+import BaseLayout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<BaseLayout title="Contact - CleanPro">
+
+  <Header />
+
+  <section class="contact-page">
+
+    <div class="container">
+
+      <div class="contact-header reveal">
+        <h1>Contactez-nous</h1>
+
+        <p>
+          Besoin d’un service de nettoyage professionnel ?
+          Notre équipe est disponible pour vous répondre rapidement.
+        </p>
+      </div>
+
+      <div class="contact-wrapper">
+
+        <!-- FORMULAIRE -->
+        <div class="contact-form reveal">
+
+          <h2>Envoyer un message</h2>
+          <p class="form-note">Recevez une offre personnalisée et un devis gratuit sous 24h.</p>
+
+          <form>
+
+            <input type="text" placeholder="Votre nom" required />
+
+            <input type="email" placeholder="Votre email" required />
+
+            <input type="tel" placeholder="Téléphone" required />
+
+            <input type="text" placeholder="Sujet" />
+
+            <textarea rows="6" placeholder="Votre message"></textarea>
+
+            <button type="submit">
+              Envoyer
+            </button>
+
+          </form>
+
+        </div>
+
+        <!-- INFORMATIONS -->
+        <div class="contact-info reveal">
+
+          <h2>Informations</h2>
+
+          <div class="info-box">
+            <span>📍</span>
+            <p>Alger, Algérie</p>
+          </div>
+
+          <div class="info-box">
+            <span>📞</span>
+            <p>+213 555 00 00</p>
+          </div>
+
+          <div class="info-box">
+            <span>✉️</span>
+            <p>contact@cleanpro.dz</p>
+          </div>
+
+          <div class="info-box">
+            <span>🕒</span>
+            <p>24h/24 - 7j/7</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <Footer />
+
+</BaseLayout>
+
+<style>
+  .contact-page {
+    padding: 150px 0 100px;
+    background: linear-gradient(180deg, #eef4fb 0%, #f8fbff 100%);
+    min-height: 100vh;
+  }
+
+  .contact-header {
+    text-align: center;
+    margin-bottom: 70px;
+  }
+
+  .contact-header h1 {
+    font-size: clamp(2.8rem, 4vw, 4.5rem);
+    color: #143d78;
+    margin-bottom: 18px;
+  }
+
+  .contact-header p {
+    max-width: 720px;
+    margin: auto;
+    color: #556277;
+    line-height: 1.8;
+    font-size: 1.05rem;
+  }
+
+  .form-note {
+    margin: 1rem 0 1.8rem;
+    color: #556277;
+    font-size: 0.98rem;
+    max-width: 560px;
+  }
+
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 36px;
+  }
+
+  .contact-form,
+  .contact-info {
+    border-radius: 28px;
+    box-shadow: 0 22px 60px rgba(15, 23, 42, 0.08);
+  }
+
+  .contact-form {
+    background: #ffffff;
+    padding: 42px;
+    border: 1px solid rgba(18, 102, 241, 0.08);
+  }
+
+  .contact-form h2 {
+    margin-bottom: 26px;
+    color: #1266f1;
+  }
+
+  .contact-form form {
+    display: grid;
+    gap: 20px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 18px;
+    border-radius: 18px;
+    border: 1px solid #d7e2f0;
+    font-size: 1rem;
+    outline: none;
+    background: #f8fbff;
+  }
+
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #1266f1;
+    box-shadow: 0 0 0 4px rgba(18, 102, 241, 0.08);
+  }
+
+  .contact-form button {
+    padding: 18px;
+    border: none;
+    background: linear-gradient(135deg, #1266f1, #1fb6ff);
+    color: white;
+    border-radius: 16px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .contact-form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 32px rgba(18, 102, 241, 0.2);
+  }
+
+  .contact-info {
+    background: linear-gradient(160deg, #1266f1 0%, #1fb6ff 100%);
+    color: white;
+    padding: 42px;
+  }
+
+  .contact-info h2 {
+    margin-bottom: 30px;
+  }
+
+  .info-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .info-box span {
+    font-size: 1.4rem;
+    line-height: 1;
+  }
+
+  .info-box p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.92);
+    margin: 0;
+    line-height: 1.75;
+  }
+
+  @media (max-width: 900px) {
+    .contact-wrapper {
+      grid-template-columns: 1fr;
+    }
+
+    .contact-header h1 {
+      font-size: 3rem;
+    }
+  }
+</style>

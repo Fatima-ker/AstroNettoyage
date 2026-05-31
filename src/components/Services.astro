@@ -1,0 +1,188 @@
+<section id="services" class="section reveal">
+  <div class="container">
+
+    <h2 class="title">Nos services de nettoyage</h2>
+
+    <p class="subtitle">
+      Des prestations adaptées à votre entreprise, votre résidence et vos chantiers. Notre objectif : un résultat impeccable, fiable et durable.
+    </p>
+
+    <div class="service-highlights">
+      <div>
+        <strong>+10 ans</strong>
+        <p>d’expérience terrain</p>
+      </div>
+      <div>
+        <strong>95%</strong>
+        <p>clients satisfaits</p>
+      </div>
+      <div>
+        <strong>24/7</strong>
+        <p>disponibilité garantie</p>
+      </div>
+    </div>
+
+    <div class="services-intro">
+      <div>
+        <span class="eyebrow">Services</span>
+        <h3>Des solutions claires et professionnelles</h3>
+        <p>Nous intervenons avec des équipes qualifiées et du matériel adapté pour chaque type d’espace.</p>
+      </div>
+      <a href="/contact" class="btn">Obtenir un devis</a>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <div class="card-icon">🏢</div>
+        <h3>Bureaux et commerces</h3>
+        <p>Entretien régulier, aspirateur, lavage des sols et remise en état des espaces de travail.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🏠</div>
+        <h3>Résidentiel</h3>
+        <p>Nettoyage complet des appartements et maisons : cuisine, salles de bain, vitres et surfaces.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🛠️</div>
+        <h3>Après travaux</h3>
+        <p>Décontamination totale après chantier : poussière, résidus, finitions et préparation à la livraison.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🧴</div>
+        <h3>Désinfection</h3>
+        <p>Traitement des surfaces sensibles et protocoles sanitaires pour un environnement sain.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .services-intro {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 3rem;
+    padding: 1.6rem 1.4rem;
+    background: rgba(18, 102, 241, 0.05);
+    border-radius: 26px;
+    border: 1px solid rgba(18, 102, 241, 0.12);
+  }
+
+  .eyebrow {
+    display: inline-block;
+    margin-bottom: 0.75rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #1266f1;
+  }
+
+  .service-highlights {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    max-width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .service-highlights div {
+    padding: 1rem 1.15rem;
+    border-radius: 22px;
+    background: rgba(18, 102, 241, 0.06);
+    border: 1px solid rgba(18, 102, 241, 0.12);
+    min-width: 170px;
+    text-align: center;
+  }
+
+  .service-highlights strong {
+    display: block;
+    font-size: 1.85rem;
+    color: #1266f1;
+    margin-bottom: 0.3rem;
+  }
+
+  .service-highlights p {
+    margin: 0;
+    color: #556277;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .services-intro h3 {
+    margin: 0 0 0.85rem;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    color: #102d5c;
+  }
+
+  .services-intro p {
+    margin: 0;
+    color: #556277;
+    max-width: 640px;
+    line-height: 1.8;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 28px;
+  }
+
+  .card {
+    background: #ffffff;
+    padding: 36px;
+    border-radius: 28px;
+    border: 1px solid rgba(18, 102, 241, 0.08);
+    box-shadow: 0 22px 45px rgba(15, 23, 42, 0.06);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.15rem;
+  }
+
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 28px 60px rgba(15, 23, 42, 0.12);
+  }
+
+  .card-icon {
+    width: 54px;
+    height: 54px;
+    border-radius: 18px;
+    display: grid;
+    place-items: center;
+    font-size: 1.4rem;
+    background: rgba(18, 102, 241, 0.12);
+    color: #1266f1;
+  }
+
+  .card h3 {
+    margin: 0;
+    color: #102d5c;
+    font-size: 1.35rem;
+  }
+
+  .card p {
+    color: #57627d;
+    line-height: 1.8;
+    font-size: 1rem;
+    margin: 0;
+    flex-grow: 1;
+  }
+
+  @media (max-width: 900px) {
+    .services-intro {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+</style>
