@@ -1,0 +1,228 @@
+<section id="about" class="about section reveal">
+  <div class="container about-inner">
+    <div class="about-intro">
+      <span class="eyebrow">Notre expertise</span>
+      <h2>Nettoyage professionnel, fiable et durable</h2>
+      <p>RAA Clean Services accompagne les entreprises, les copropriétés et les chantiers avec des solutions de nettoyage adaptées, une équipe formée et des process respectueux de l’environnement.</p>
+      <a href="/contact" class="btn btn-ghost">Demandez un devis gratuit</a>
+    </div>
+
+    <div class="about-grid">
+      <article class="about-card card-highlight">
+        <div class="card-head">
+          <span class="card-badge">01</span>
+          <h3>Domaines d’intervention</h3>
+        </div>
+        <ul>
+          <li>Bureaux et espaces administratifs</li>
+          <li>Immeubles et copropriétés</li>
+          <li>Remise en état après travaux</li>
+          <li>Vitrerie et façades</li>
+          <li>Locaux commerciaux</li>
+        </ul>
+      </article>
+
+      <article class="about-card">
+        <div class="card-head">
+          <span class="card-badge">02</span>
+          <h3>Engagements qualité</h3>
+        </div>
+        <ul>
+          <li>Respect du cahier des charges</li>
+          <li>Interventions fiables et discrètes</li>
+          <li>Produits sûrs et efficaces</li>
+          <li>Suivi client rigoureux</li>
+          <li>Transparence tarifaire</li>
+        </ul>
+      </article>
+
+      <article class="about-card">
+        <div class="card-head">
+          <span class="card-badge">03</span>
+          <h3>Notre promesse</h3>
+        </div>
+        <p>Chaque projet est étudié pour proposer une prestation sur mesure, adaptée à la surface, à la fréquence et au niveau d’exigence attendu par nos clients.</p>
+        <a href="/contact" class="btn btn-secondary">Recevez votre proposition</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about {
+    background: linear-gradient(180deg, #f9fcf9 0%, #eef7f3 100%);
+    position: relative;
+    padding: 120px 0 80px;
+  }
+
+  .about::before {
+    content: '';
+    position: absolute;
+    inset: 12% 0 auto auto;
+    width: 260px;
+    height: 260px;
+    background: radial-gradient(circle at center, rgba(47, 167, 74, 0.18), transparent 55%);
+    filter: blur(40px);
+    z-index: 0;
+    opacity: 0.8;
+  }
+
+  .about-inner {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    gap: 2.5rem;
+  }
+
+  .about-intro {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    padding: 0.45rem 0.9rem;
+    border-radius: 999px;
+    background: rgba(47, 167, 74, 0.12);
+    color: var(--secondary);
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-size: 0.81rem;
+  }
+
+  .about-intro h2 {
+    font-size: clamp(2.4rem, 4vw, 3.6rem);
+    line-height: 1.05;
+    color: #102d5c;
+    margin: 0 0 1rem;
+  }
+
+  .about-intro p {
+    max-width: 720px;
+    margin: 0 auto 1.75rem;
+    color: #4f5f75;
+    font-size: 1.05rem;
+    line-height: 1.85;
+  }
+
+  .btn-ghost {
+    background: #ffffff;
+    color: #102d5c;
+    border: 1px solid rgba(26, 99, 208, 0.14);
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
+  }
+
+  .btn-secondary {
+    background: var(--secondary);
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    gap: 1.8rem;
+  }
+
+  .about-card {
+    background: #ffffff;
+    border-radius: 32px;
+    border: 1px solid rgba(47, 167, 74, 0.08);
+    padding: 2rem;
+    box-shadow: 0 24px 80px rgba(15, 23, 42, 0.06);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%;
+  }
+
+  .card-highlight {
+    border-color: rgba(26, 99, 208, 0.16);
+    background: linear-gradient(180deg, rgba(47, 167, 74, 0.06), #ffffff 36%);
+  }
+
+  .card-head {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.35rem;
+  }
+
+  .card-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 16px;
+    background: rgba(26, 99, 208, 0.12);
+    color: #1a63d0;
+    font-weight: 700;
+  }
+
+  .about-card h3 {
+    margin: 0;
+    color: #102d5c;
+    font-size: 1.35rem;
+  }
+
+  .about-card p {
+    margin: 0 0 1.75rem;
+    color: #4f5f75;
+    line-height: 1.85;
+  }
+
+  .about-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 0.85rem;
+  }
+
+  .about-card li {
+    position: relative;
+    padding-left: 1.7rem;
+    color: #4f5f75;
+    line-height: 1.75;
+  }
+
+  .about-card li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    top: 0.06rem;
+    color: var(--secondary);
+    font-weight: 700;
+    font-size: 0.95rem;
+  }
+
+  .about-card .btn {
+    margin-top: auto;
+    width: fit-content;
+    align-self: flex-start;
+  }
+
+  @media (max-width: 1024px) {
+    .about-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .about {
+      padding: 90px 0 60px;
+    }
+
+    .about-intro h2 {
+      font-size: 2.25rem;
+    }
+
+    .about-card {
+      padding: 1.7rem;
+    }
+  }
+</style>

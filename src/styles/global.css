@@ -4,13 +4,15 @@
   font-smooth: always;
   text-rendering: optimizeLegibility;
   line-height: 1.65;
-  background: #eef4fb;
+  background: #eef7f3;
   color: #111827;
   --surface: #ffffff;
-  --surface-alt: #f8fbff;
+  --surface-alt: #f4fbf5;
   --text-muted: #556277;
-  --primary: #1266f1;
+  --primary: #1a63d0;
+  --secondary: #2fa74a;
   --primary-soft: #dbe9ff;
+  --secondary-soft: #dff3dc;
   --shadow: 0 24px 80px rgba(15, 23, 42, 0.08);
 }
 
@@ -54,11 +56,7 @@ a {
   text-align: center;
   font-size: clamp(2.4rem, 3vw, 3.25rem);
   margin-bottom: 20px;
-  color: #143d78;
-  letter-spacing: -0.03em;
-}
-
-.subtitle {
+  color: var(--primary);
   text-align: center;
   max-width: 720px;
   margin: 0 auto 60px;
@@ -74,7 +72,7 @@ button {
   gap: 0.5rem;
   padding: 0.95rem 1.8rem;
   border-radius: 999px;
-  background: linear-gradient(135deg, #1266f1 0%, #1fb6ff 100%);
+  background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
   color: #fff;
   text-decoration: none;
   font-weight: 700;
@@ -83,7 +81,7 @@ button {
     transform 0.3s ease,
     box-shadow 0.3s ease,
     opacity 0.3s ease;
-  box-shadow: 0 18px 40px rgba(18, 102, 241, 0.18);
+  box-shadow: 0 18px 40px rgba(47, 167, 74, 0.18);
 }
 
 .btn:hover,
@@ -134,5 +132,5 @@ ol {
 }
 
 ::selection {
-  background: rgba(18, 102, 241, 0.18);
+  background: rgba(47, 167, 74, 0.18);
 }
