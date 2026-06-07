@@ -25,10 +25,38 @@
     background-image: linear-gradient(180deg, rgba(26, 99, 208, 0.24), rgba(47, 167, 74, 0.09)), url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1600&q=80');
     background-size: cover;
     background-position: center center;
+    background-attachment: fixed;
     display: grid;
     align-items: center;
     position: relative;
     padding-top: 86px;
+    padding-bottom: 2rem;
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      background-attachment: scroll;
+      min-height: auto;
+      height: calc(100vh - 100px);
+      padding-top: 30px;
+      padding-bottom: 1rem;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .hero {
+      height: calc(100vh - 70px);
+      padding-top: 20px;
+      padding-bottom: 0.8rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero {
+      height: calc(100vh - 50px);
+      padding-top: 15px;
+      padding-bottom: 0.6rem;
+    }
   }
 
   .hero::before {
@@ -55,11 +83,40 @@
     letter-spacing: -0.03em;
   }
 
+  @media (max-width: 900px) {
+    .content h1 {
+      font-size: clamp(2rem, 6vw, 3.6rem);
+      margin: 0 auto 0.9rem;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .content h1 {
+      font-size: clamp(1.6rem, 7vw, 2.6rem);
+      margin: 0 auto 0.75rem;
+    }
+  }
+
   .content p {
     margin: 1.75rem auto 2rem;
     font-size: 1.15rem;
     max-width: 680px;
     color: rgba(255, 255, 255, 0.92);
+  }
+
+  @media (max-width: 900px) {
+    .content p {
+      margin: 1.5rem auto 1.75rem;
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .content p {
+      margin: 1.2rem auto 1.5rem;
+      font-size: 0.95rem;
+      line-height: 1.75;
+    }
   }
 
   .hero-actions {
@@ -68,6 +125,32 @@
     flex-wrap: wrap;
     gap: 1rem;
     margin-top: 2rem;
+  }
+
+  @media (max-width: 900px) {
+    .hero-actions {
+      gap: 0.9rem;
+      margin-top: 1.7rem;
+    }
+
+    .hero-actions a {
+      padding: 0.9rem 1.6rem;
+      font-size: 0.95rem;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .hero-actions {
+      flex-direction: column;
+      gap: 0.8rem;
+      margin-top: 1.4rem;
+    }
+
+    .hero-actions a {
+      width: 100%;
+      padding: 0.85rem 1.2rem;
+      font-size: 0.9rem;
+    }
   }
 
   .hero-features {
@@ -87,5 +170,30 @@
     background: rgba(255, 255, 255, 0.14);
     color: #f8fbff;
     font-size: 0.95rem;
+  }
+
+  @media (max-width: 900px) {
+    .hero-features {
+      gap: 0.7rem;
+      margin-top: 1.5rem;
+    }
+
+    .hero-features span {
+      padding: 0.7rem 0.9rem;
+      font-size: 0.9rem;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .hero-features {
+      gap: 0.6rem;
+      margin-top: 1.2rem;
+    }
+
+    .hero-features span {
+      padding: 0.65rem 0.85rem;
+      font-size: 0.82rem;
+      border-radius: 20px;
+    }
   }
 </style>
